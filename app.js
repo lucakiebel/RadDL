@@ -9,6 +9,7 @@ $(document).ready(() => {
 			console.log("Input fits");
 			a.src = $input.val();
 			console.log("Input Value: ", $input.val());
+			document.body.appendChild(a);
 			a.click();
 		} 
 	});
