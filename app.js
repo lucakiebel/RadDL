@@ -8,6 +8,7 @@ $(document).ready(() => {
 		if ($input.val() && $input.val().split(".")[$input.val().split(".").length-1] === "gpx") {
 			console.log("Input fits");
 			a.href = "http://sk-cdn.net/websites/rad.luca.lk/api.php?url="+$input.val();
+			a.download = true;
 			document.body.appendChild(a);
 			a.click();
 			document.body.removeChild(a);
