@@ -7,7 +7,7 @@ $(document).ready(() => {
 		a.download = true;
 		if ($input.val() && $input.val().split(".")[$input.val().split(".").length-1] === "gpx") {
 			console.log("Input fits");
-			a.src = $input.val();
+			a.href = $input.val();
 			console.log("Input Value: ", $input.val());
 			document.body.appendChild(a);
 			a.click();
