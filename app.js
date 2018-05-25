@@ -4,7 +4,7 @@ $(document).ready(() => {
 
 	$button.on("click", () => {
 		let a = document.createElement("A");
-		a.download = true;
+		a.download = "FahrradRoute.gpx";
 		if ($input.val() && $input.val().split(".")[$input.val().split(".").length-1] === "gpx") {
 			console.log("Input fits");
 			a.href = $input.val();
