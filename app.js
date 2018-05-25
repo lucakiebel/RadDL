@@ -5,7 +5,7 @@ $(document).ready(() => {
 	$button.on("click", () => {
 		let a = document.createElement("A");
 		a.download = true;
-		if ($input.val() && $input.val().substring($input.val().length-4, $input.val()-1).toLowerCase() === "gpx") {
+		if ($input.val() && $input.val().split(".")[$input.val().split(".").length-1] === "gpx") {
 			console.log("Input fits");
 			a.src = $input.val();
 			console.log("Input Value: ", $input.val());
